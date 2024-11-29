@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Navbar with Dropdowns</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div
+      class="container-fluid py-1 px-3 d-flex justify-content-center justify-content-md-start align-items-center bg-teal text-light flex-wrap"
+    >
+      <div class="container">
+        <span class="mx-1 d-block d-md-inline">9470 Riverview, Zion 60099</span>
+        <span class="d-block d-md-inline">info@Protolo.com</span>
+        <span class="mx-1 mx-md-5 d-block d-md-inline">+88 564 867 4687</span>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light py-3 fs-6">
+      <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="/assets/images/Group 18168.png" alt="logo" />
+          <span class="fw-bold font-teal ms-2">Potolo</span>
+        </a>
+
+        <!-- Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-2 gap-lg-4">
+            <!-- Service Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="serviceDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Service
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                <li><a class="dropdown-item" href="#">Web Design</a></li>
+                <li><a class="dropdown-item" href="#">SEO Services</a></li>
+                <li><a class="dropdown-item" href="#">App Development</a></li>
+                <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <!-- Business Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="businessDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Business
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="businessDropdown">
+                <li><a class="dropdown-item" href="#">Startup Solutions</a></li>
+                <li><a class="dropdown-item" href="#">B2B Partnerships</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Franchise Opportunities</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Consulting Services</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Apply Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="applyDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Apply
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="applyDropdown">
+                <li><a class="dropdown-item" href="#">Job Application</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Internship Application</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Freelancer Application</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Volunteer Opportunities</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Sign Up Button -->
+          <div class="align-items-center gap-2 nav-sign">
+            <div class="nav-item">
+              <a href="#" class="nav-link py-1">Log in</a>
+            </div>
+            <div>
+              <a href="#" class="btn rounded-pill px-4 btn-teal btn-sign"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sub Navbar -->
+    <div class="container-fluid">
+      <div
+        class="container d-flex justify-content-center justify-content-md-start flex-wrap gap-2 sub-navbar"
+      >
+        <a href="#" class="passive">About Us</a>
+        <a href="#" class="passive">Corporate Information</a>
+        <a href="#" class="passive">News Room</a>
+        <a href="#" class="passive">Investor Relationship</a>
+        <a href="#" class="passive">Eco Actions</a>
+        <a href="#" class="passive">Legal</a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="container-fluid py-5 px-3 px-lg-5 about-section mt-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 text-center text-lg-start">
+            <h2>About <span class="font-teal">Potolo</span></h2>
+            <p class="font-paragraph">
+              POTOLO is a pioneering platform dedicated to empowering local
+              businesses and fostering vibrant communities through innovative,
+              eco-friendly delivery services. Our mission is to create a
+              seamless ecosystem that connects entrepreneurs, local service
+              providers, and consumers, ensuring mutual growth and
+              sustainability.
+            </p>
+            <a href="#" class="btn btn-teal mt-3">
+              Learn More
+              <img
+                class="arrow"
+                src="/assets/images/arrow-white.png"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-lg-6 text-center">
+            <img
+              src="/assets/images/hero-section.png"
+              alt="About Potolo"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Vision Section -->
+    <section class="container-fluid py-5">
+      <div class="container">
+        <div class="row align-items-center text-center text-lg-start">
+          <div class="col-12 col-lg-6 order-2 order-lg-2 mb-4 mb-lg-0">
+            <h2>Our <span class="font-teal">Vision</span></h2>
+            <p class="font-paragraph col-lg-8">
+              At POTOLO, we envision a world where local businesses thrive at
+              the heart of strong communities. By empowering small enterprises
+              to reach wider audiences, we foster local economic growth and
+              sustainability, ensuring businesses and communities flourish
+              together.
+              <br />
+              We aim to enhance local economies in a sustainable environment,
+              where businesses and the neighborhood create mutual prosperity.
+            </p>
+            <a href="#" class="btn font-teal mt-5"
+              >Learn More
+              <img
+                class="arrow ms-2"
+                src="/assets/images/arrow.png"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-lg-5 order-1 order-lg-1">
+            <img
+              src="/assets/images/our-vision.png"
+              alt="Vision Team"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Commitment Section -->
+    <section class="container-fluid py-5 px-3 px-lg-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center text-center text-lg-start">
+          <!-- Text Section -->
+          <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+            <h2>Our <span class="font-teal">Commitment</span></h2>
+            <p class="font-paragraph">
+              Our mission is to provide users with ease of accessibility and
+              quick fulfilment for most consumer needs, making life simple while
+              helping city-run businesses. We strive to provide streamlined,
+              effective services, and are dedicated to providing the best
+              consumer experience in a way that supports environmental
+              restoration efforts, local economies. With focus on innovation and
+              product quality, our goal is to create a vehicle that addresses
+              market needs and challenges the status quo while engaging
+              communities through economic growth for better environmental
+              solutions.
+            </p>
+            <a href="#" class="btn font-teal learn-more"
+              >Learn More
+              <img
+                class="arrow ms-2"
+                src="/assets/images/arrow.png"
+                alt="arrow"
+              />
+            </a>
+          </div>
+
+          <!-- Image Section -->
+          <div class="col-12 col-lg-5">
+            <img
+              src="/assets/images/our-comitment.jfif"
+              alt="Our Commitment"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h2 class="mb-4">Meet our <span class="font-teal">Team</span></h2>
+      <p class="text-muted team-para col-sm-5 col-lg-8">
+        Our dedicated team at Potolo is passionate about empowering local
+        businesses and fostering community connections. We work together to make
+        local services easily accessible, delivering growth, convenience, and
+        quality for all.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Team Member 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="team-card text-center">
+              <img src="/assets/images/Alice Johnson.png" alt="Alice Johnson" />
+              <h5>Alice Johnson</h5>
+              <a class="font-teal" href="#">CEO & Founder</a>
+              <p class="mt-2">
+                Driven by a passion for community, Alice leads Potolo with
+                vision and commitment.
+              </p>
+              <div class="social-icons">
+                <a>
+                  <img src="/assets/images/x.png" alt="X Icon" />
+                </a>
+                <a>
+                  <img
+                    class="ms-3"
+                    src="/assets/images/linkedin.png"
+                    alt="LinkedIn Icon"
+                  />
+                </a>
+                <a>
+                  <img class="ms-3" src="/assets/images/Be.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="team-card text-center">
+              <img src="/assets/images/Mark Smith.png" alt="Mark Smith" />
+              <h5>Mark Smith</h5>
+              <a href="#">Marketing Director</a>
+              <p class="mt-2">
+                Mark crafts compelling stories that connect local businesses
+                with their communities.
+              </p>
+              <div class="social-icons">
+                <a>
+                  <img src="/assets/images/x.png" alt="X Icon" />
+                </a>
+                <a>
+                  <img
+                    class="ms-3"
+                    src="/assets/images/linkedin.png"
+                    alt="LinkedIn Icon"
+                  />
+                </a>
+                <a>
+                  <img class="ms-3" src="/assets/images/Be.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="team-card text-center">
+              <img src="/assets/images/Emily Davis.png" alt="Emily Davis" />
+              <h5>Emily Davis</h5>
+              <a href="#">Product Manager</a>
+              <p class="mt-2">
+                Emily ensures our platform meets the needs of both businesses
+                and consumers.
+              </p>
+              <div class="social-icons">
+                <a>
+                  <img src="/assets/images/x.png" alt="X Icon" />
+                </a>
+                <a>
+                  <img
+                    class="ms-3"
+                    src="/assets/images/linkedin.png"
+                    alt="LinkedIn Icon"
+                  />
+                </a>
+                <a>
+                  <img class="ms-3" src="/assets/images/Be.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="container">
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-md-3">
+              <h5>Potolo</h5>
+              <p class="">
+                OurStudio is a digital agency specializing in UI/UX Design and
+                Website Development located in Ohio, United States of America.
+              </p>
+              <p>Copyright Satyam Studio</p>
+            </div>
+            <!-- Service Section -->
+            <div class="col-md-2">
+              <h5>Service</h5>
+              <ul class="list-unstyled d-flex flex-column gap-3">
+                <li><a href="#">Illustration</a></li>
+                <li><a href="#">Mobile Design</a></li>
+                <li><a href="#">Motion Graphic</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">SEO</a></li>
+              </ul>
+            </div>
+            <!-- Company Section -->
+            <div class="col-md-2">
+              <h5>Company</h5>
+              <ul class="list-unstyled d-flex flex-column gap-3">
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <!-- Newsletter Section -->
+            <div class="col-md-5">
+              <h5>Join a Newsletter</h5>
+              <form class="d-flex">
+                <input
+                  type="email"
+                  class="form-control me-2"
+                  placeholder="Enter Your Email"
+                />
+                <button class="subscribe-btn" type="button">Subscribe</button>
+              </form>
+              <div class="social-icons d-flex justify-content-start mt-3">
+                <a
+                  href="#"
+                  class="btn btn-teal text-white d-flex justify-content-center align-items-center rounded-circle me-2"
+                  >Dr</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-teal text-white d-flex justify-content-center align-items-center rounded-circle me-2"
+                  >Be</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-teal text-white d-flex justify-content-center align-items-center rounded-circle"
+                  >Ig</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div
+              class="d-flex justify-content-between align-items-center flex-wrap"
+            >
+              <!-- Left Section -->
+              <span class="text-left">Copyright Satyam Studio</span>
+
+              <!-- Right Section -->
+              <div class="d-flex align-items-center flex-wrap gap-3">
+                <span class="contact-info">
+                  <img
+                    src="/assets/images/location_on.png"
+                    alt="location"
+                    style="width: 16px; height: 16px"
+                  />
+                  8819 Ohio St. South Gate, CA 90280
+                </span>
+                <span>
+                  <img
+                    src="/assets/images/email.png"
+                    alt="email"
+                    style="width: 16px; height: 16px"
+                  />
+                  ourstudio@hello.com
+                </span>
+                <span>
+                  <img
+                    src="/assets/images/call.png"
+                    alt="phone icon"
+                    style="width: 16px; height: 16px"
+                  />
+                  +1 386-688-3295
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

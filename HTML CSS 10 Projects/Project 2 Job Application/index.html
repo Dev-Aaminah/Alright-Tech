@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application (Web)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <p>Job Application <span class="heading">(Web)</span></p>
+      </div>
+    </header>
+    <!-------------->
+    <div class="form-container">
+      <form action="#">
+        <!------------------------>
+        <div class="row">
+          <!---->
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <!---->
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+        <!------------------------>
+        <div class="row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="job-role">Job Role</label>
+            <select name="job-role" id="job-role">
+              <option value="">Select Job Role</option>
+              <option value="developer">Developer</option>
+              <option value="designer">Designer</option>
+              <option value="manager">Manager</option>
+            </select>
+          </div>
+        </div>
+        <!------------------------>
+        <div class="address form-group">
+          <label for="address">Address</label>
+          <textarea
+            class="address-box"
+            name="address"
+            id="address"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <!------------------------>
+        <div class="row">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required />
+          </div>
+          <!---->
+          <div class="form-group">
+            <label for="pincode">Pincode</label>
+            <input type="text" id="pincode" name="pincode" required />
+          </div>
+        </div>
+        <!------------------------>
+        <div class="row">
+          <div class="form-group">
+            <label for="start date">Start Date</label>
+            <input type="date" id="start-date" name="start-date" required />
+          </div>
+          <!---->
+          <div class="form-group">
+            <label for="cv-upload">Upload Your CV</label>
+            <input type="file" id="cv-upload" name="cv-upload" required />
+          </div>
+        </div>
+        <!------------------------>
+        <div class="apply-btn form-group">
+          <button type="submit">Apply Now</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
