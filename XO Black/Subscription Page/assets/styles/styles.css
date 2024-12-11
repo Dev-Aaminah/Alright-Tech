@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #3eba75;
+    --secondary-color: #349c61;
+    --ternary-color: rgba(222, 243, 232, 1);
+}
+  
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+  
+button.btn-subscribe {
+    background-color: var(--primary-color);
+    color: white;
+}
+  
+button.btn-subscribe:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+  
+#toggleIcon {
+    font-size: 1.5rem;
+}
+  
+.modal-footer button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.save-btn{
+    background: var(--ternary-color);
+    color: var(--secondary-color);
+    border-radius: 1rem;
+    font-size: 0.7rem;
+}
+
+.payment-option {
+    padding: 10px;
+}
+  
+#paymentOption1, #paymentOption2 {
+    border-bottom: 2px solid #ccc;
+}
+  
+#paymentOption1, #paymentOption2 {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+button.btn-continue {
+    background-color: var(--primary-color);
+    color: white;
+}
+  
+button.btn-continue:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+button.btn-cancel {
+    color: rgb(95, 93, 93);
+}
+  
+button.btn-cancel:hover {
+    background-color: gray;
+    color: white;
+}
+
+.text-muted {
+    color: gray;
+}
+  
+.text-success {
+    color: var(--primary-color);
+}
+  
+#toggleIcon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Styling for Round Checkbox with BS Utilities */
+/* Fully Custom Checkbox */
+.bs-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Checked State */
+  .bs-checkbox:checked {
+    background-color: var(--primary-color)!important;
+    border-color: var(--primary-color) !important;
+    color: white;
+  }
+  
+  /* Custom Tick */
+  .bs-checkbox:checked::before {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1px;
+  }
+  

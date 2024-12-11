@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repost Modal</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- Modal -->
+    <!-- Text Post Modal -->
+    <div
+      class="modal fade"
+      id="textPostModal"
+      tabindex="-1"
+      aria-labelledby="textPostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-1 py-2">
+            <button
+              type="button"
+              class="btn-close me-auto close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <h5 class="modal-title text-center w-100" id="textPostModalLabel">
+              Repost Text Post
+            </h5>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex">
+              <div>
+                <img
+                  src="/assets/images/repost-icon.png"
+                  alt="Repost User Icon"
+                  class="w-100"
+                />
+              </div>
+              <div class="w-100">
+                <input
+                  class="form-control border-0"
+                  placeholder="Add comment..."
+                  rows="1"
+                ></input>
+              </div>
+            </div>
+            <!-- Repost Content -->
+            <div class="repost-content border rounded p-3 mt-3 ms-5 border-bottom">
+              <div class="d-flex align-items-start">
+                <img
+                  src="/assets/images/post-icon.png"
+                  alt="User Image"
+                  class="rounded-circle me-2"
+                />
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <div class="fw-bold">diana</div>
+                    <div class="text-muted">6m ago</div>
+                  </div>
+                  <div class="mt-2">
+                    Just hit 3,000+ followers on X! Thanks for being here and
+                    letting me share my work with you.
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Footer Actions -->
+            <div
+              class="d-flex justify-content-between align-items-center mt-4 border-top"
+            >
+              <div>
+                <div class="text-muted mb-2">
+                  <i class="bi bi-person-plus-fill me-2"></i>Your followers
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center border-top">
+              <div>
+                <div class="action-icons d-flex justify-content-start mb-0">
+                  <div class="text-center me-2">
+                    <i class="bi bi-image"></i>
+                    <div class="small text-muted">Gallery</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="bi bi-filetype-gif"></i>
+                    <div class="small text-muted">GIF</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <div class="small text-muted">Polling</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="small text-muted">Location</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="small text-muted">Schedule</div>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <div class="small text-muted">Share to</div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-success rounded-pill px-4">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Image Post Modal -->
+      <div
+      class="modal fade"
+      id="imagePostModal"
+      tabindex="-1"
+      aria-labelledby="imagePostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-1 py-2">
+            <button
+              type="button"
+              class="btn-close me-auto close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <h5 class="modal-title text-center w-100" id="imagePostModalLabel">
+              Repost Image Post
+            </h5>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex">
+              <div>
+                <img
+                  src="/assets/images/repost-icon.png"
+                  alt="Repost User Icon"
+                  class="w-100"
+                />
+              </div>
+              <div class="w-100">
+                <input
+                  class="form-control border-0"
+                  placeholder="Add comment..."
+                  rows="1"
+                ></input>
+              </div>
+            </div>
+            <!-- Repost Content -->
+            <div class="repost-content border rounded p-3 mt-3 ms-5 border-bottom">
+              <div class="d-flex justify-content-between align-items-center">
+                <img
+                  src="/assets/images/post-icon.png"
+                  alt="User Image"
+                  class="rounded-circle me-2"
+                />
+                <div class="fw-bold">diana</div>
+                <div class="text-muted ms-auto" style="font-size: 0.8rem;">6m ago</div>
+              </div>
+              <div class="mt-2 p-2">
+                    <p style="font-size: 0.7rem; line-height: 1.5;">
+                        Just hit 3,000+ followers on X! Thanks for being here and letting me share my work with you.
+                    </p>
+                  </div>
+                  <!-- <div class="post-image py-2">
+                    <img
+                      src="/assets/images/Image.png"
+                      alt="Post Image"
+                      class="rounded"
+                    />
+                  </div> -->
+                  <div class="container">
+                    <div class="row">
+                      <!-- Left Image -->
+                      <div class="col-7 d-flex flex-column p-0">
+                        <div class="image-container flex-grow-1 d-flex justify-content-center align-items-start">
+                          <img src="/assets/images/post-img.jpg" alt="Left Image" class="img-fluid rounded">
+                        </div>
+                      </div>
+                      <!-- Right Images -->
+                      <div class="col-4">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <img src="/assets/images/post-img.jpg" alt="Top Right Image" class="img-fluid rounded">
+                          </div>
+                          <div class="col-12">
+                            <img src="/assets/images/post-img.jpg" alt="Bottom Right Image" class="img-fluid rounded">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <!-- Footer Actions -->
+            <div
+              class="d-flex justify-content-between align-items-center mt-4 border-top"
+            >
+              <div>
+                <div class="text-muted mb-2">
+                  <i class="bi bi-person-plus-fill me-2"></i>Your followers
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center border-top py-1">
+              <div>
+                <div class="action-icons d-flex justify-content-start mb-0">
+                  <div class="text-center me-2">
+                    <i class="bi bi-image"></i>
+                    <div class="small text-muted">Gallery</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="bi bi-filetype-gif"></i>
+                    <div class="small text-muted">GIF</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <div class="small text-muted">Polling</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="small text-muted">Location</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="small text-muted">Schedule</div>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <div class="small text-muted">Share to</div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-success rounded-pill px-4">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Post Modal -->
+    <div
+    class="modal fade"
+    id="videoPostModal"
+    tabindex="-1"
+    aria-labelledby="videoPostModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-1 py-2">
+          <button
+            type="button"
+            class="btn-close me-auto close-btn"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <h5 class="modal-title text-center w-100" id="videoPostModalLabel">
+            Repost
+          </h5>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex">
+            <div>
+              <img
+                src="/assets/images/repost-icon.png"
+                alt="Repost User Icon"
+                class="w-100"
+              />
+            </div>
+            <div class="w-100">
+              <input
+                class="form-control border-0"
+                placeholder="Add comment..."
+                rows="1"
+              ></input>
+            </div>
+          </div>
+          <!-- Repost Content -->
+          <div class="repost-content border rounded p-3 mt-3 ms-5 border-bottom">
+            <div class="d-flex justify-content-between align-items-center">
+              <img
+                src="/assets/images/post-icon.png"
+                alt="User Image"
+                class="rounded-circle me-2"
+              />
+              <div class="fw-bold">diana</div>
+              <div class="text-muted ms-auto" style="font-size: 0.8rem;">6m ago</div>
+            </div>
+            <div class="mt-2">
+                  <p style="font-size: 0.7rem; line-height: 1.5;">
+                      Just hit 3,000+ followers on X! Thanks for being here and letting me share my work with you.
+                  </p>
+                </div>
+                <div class="post-image">
+                  <img
+                    src="/assets/images/vid-img.png"
+                    alt="Video Post"
+                    class="rounded"
+                  />
+                </div>
+                </div>
+          </div>
+          <!-- Footer Actions -->
+          <div
+              class="d-flex justify-content-between align-items-center mt-4 border-top"
+            >
+              <div>
+                <div class="text-muted mb-2">
+                  <i class="bi bi-person-plus-fill me-2 ps-3"></i>Your followers
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center border-top px-2 py-2">
+              <div>
+                <div class="action-icons d-flex justify-content-start mb-0">
+                  <div class="text-center me-2">
+                    <i class="bi bi-image"></i>
+                    <div class="small text-muted">Gallery</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="bi bi-filetype-gif"></i>
+                    <div class="small text-muted">GIF</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <div class="small text-muted">Polling</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="small text-muted">Location</div>
+                  </div>
+                  <div class="text-center me-2">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="small text-muted">Schedule</div>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <div class="small text-muted">Share to</div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-success rounded-pill px-4">Post</button>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Trigger Button for Text Post -->
+    <button
+      type="button"
+      class="btn btn-success"
+      data-bs-toggle="modal"
+      data-bs-target="#textPostModal"
+    >
+      Open Text Post
+    </button>
+
+    <!-- Trigger Button for Image Post -->
+    <button
+      type="button"
+      class="btn btn-success"
+      data-bs-toggle="modal"
+      data-bs-target="#imagePostModal"
+    >
+      Open Image Post
+    </button>
+
+    <!-- Trigger Button for Image Post -->
+    <button
+      type="button"
+      class="btn btn-success"
+      data-bs-toggle="modal"
+      data-bs-target="#videoPostModal"
+    >
+      Open Video Post
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

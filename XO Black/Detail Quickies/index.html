@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Quickies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+  </head>
+  <body>
+    <div class="w-100">
+      <!-- Header Section -->
+      <header class="d-flex justify-content-between align-items-center py-1">
+        <img src="/assets/images/logo.png" alt="Logo Image" class="px-5 logo-img" />
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-success rounded-pill btns">+ Create Post</button>
+          <div class="user-header p-1 rounded">
+            <div class="dropdown">
+              <div
+                class="d-flex align-items-center justify-content-between"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                role="button"
+              >
+                <!-- Profile Picture -->
+                <div>
+                  <img
+                    src="/assets/images/Taylor Hill.jpeg"
+                    class="rounded-circle"
+                    alt="Profile"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+            
+                <!-- User Details -->
+                <div class="d-flex flex-column ms-1 text-center text-md-start">
+                  <div>
+                    <small class="fw-bold">Taylor Hill</small>
+                  </div>
+                  <div>
+                    <small class="text-muted">@taylor77</small>
+                  </div>
+                </div>
+            
+                <!-- Dropdown Icon -->
+                <div class="ms-2 me-2">
+                  <i
+                    class="bi bi-caret-down-fill"
+                    aria-label="Dropdown Menu"
+                  ></i>
+                </div>
+              </div>
+            
+              <!-- Dropdown Menu -->
+              <ul class="dropdown-menu mt-2 shadow-sm dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-danger" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </header>
+      <!-- Content Wrapper -->
+      <div class="content-wrapper">
+        <!-- Left Video Panel -->
+        <div class="col-md-7 col-sm-12">
+          <div class="video-container position-relative" id="videoContainer">
+            <video class="background-video position-absolute w-100 h-100" autoplay muted loop playsinline></video>
+            
+            <div class="position-absolute top-0 w-100 d-flex justify-content-between align-items-center px-3 py-2" style="z-index: 3;">
+              <button type="button" class="btn-close icon-style vid-button" aria-label="Close" id="closeBtn"></button>
+              
+              <div class="search-bar">
+                <input type="text" class="form-control text-white rounded-pill search" placeholder="Search..." aria-label="Search" />
+              </div>
+              
+              <div class="btn-group dropstart">
+                <button type="button" class="btn btn-secondary rounded-circle p-3" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-three-dots fs-4 text-white"></i>
+                </button>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-flag text-muted me-2"></i>Report</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-copy me-2"></i>Copy Link</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-link-45deg me-2"></i>Embed</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="video-center d-flex justify-content-center align-items-center h-100">
+              <video class="video-content" controls></video>
+            </div>
+            
+            <div class="video-footer-icons position-absolute end-0 d-flex flex-column justify-content-center align-items-center py-5 mt-5 me-3">
+              <div class="d-none d-md-flex flex-column align-items-center gap-3">
+                <i class="bi bi-arrow-up fs-4 icon-style" id="prev-video"></i>
+                <i class="bi bi-play-fill fs-4 icon-style" id="play-btn"></i>
+                <i class="bi bi-volume-up-fill fs-4 icon-style" id="volume-btn"></i>
+                <i class="bi bi-arrow-down fs-4 icon-style" id="next-video"></i>
+              </div>
+              
+              <div class="d-flex d-md-none flex-column align-items-center gap-1 small-icons">
+                <i class="bi bi-hand-thumbs-up icon-style fs-4" id="like-btn"></i>
+                <i class="bi bi-chat icon-style fs-6" id="comment-btn"></i>
+                <i class="bi bi-send icon-style" id="send-btn"></i>
+                <i class="bi bi-share icon-style" id="share-btn"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="side-panel">
+          <!-- Asaldesign_ui Post -->
+          <div class="border rounded p-3">
+            <div class="profile-section">
+              <div class="d-flex align-items-center">
+                <img
+                  src="/assets/images/asaldesign_uix.png"
+                  class="rounded-circle"
+                  alt="Profile"
+                  width="40"
+                  height="40"
+                />
+                <div class="profile-info">
+                  <h6>
+                    asaldesign_ui
+                    <i class="bi bi-suit-club-fill"></i>
+                    <small class="text-muted">6m ago</small>
+                  </h6>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <button class="btn btn-dark btn-sm rounded-pill mb-2 mb-md-0 btns">+ Follow</button>
+                <i class="bi bi-three-dots border rounded-circle ms-2 px-1"></i>
+              </div>
+            </div>
+            <p class="mb-0 p-0">
+              Just hit 3,000+ followers on X! Thanks for being here and letting me
+              share my work with you.
+            </p>
+          </div>
+          
+          <div class="icon-group d-flex gap-1 w-100 mt-2 mb-2">
+            <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+              <i class="bi bi-heart-fill"></i>
+              <span>123</span>
+            </span>
+            <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+              <i class="bi bi-chat-text"></i>
+              <span>123</span>
+            </span>
+            <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+              <i class="fa-solid fa-retweet"></i>
+              <span>123</span>
+            </span>
+            <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>123</span>
+            </span>
+            <span class="bg-light rounded-circle d-flex align-items-center justify-content-center ms-auto bookmark">
+              <i class="bi bi-bookmark-fill"></i>
+            </span>
+          </div>
+          
+          
+          <!-- Comment Section -->
+          <div class="d-flex align-items-center  mt-2 mb-2">
+            <img
+              src="/assets/images/Taylor Hill.jpeg"
+              class="rounded-circle"
+              alt="Profile"
+              width="40"
+              height="40"
+            />
+            <input
+              class="form-control rounded-pill ms-2"
+              type="text"
+              placeholder="Comment..."
+              style="border-radius: 20px;"
+            />
+            <span class="bg-light px-2 py-1 rounded-5 d-flex align-items-center ms-1">
+              <i class="bi bi-image"></i>
+          </div>          
+        
+          <!-- Comments Section -->
+          <div class="comments-section px-4 mt-3">
+            <!-- First Comment -->
+            <div class="comment d-flex mb-3">
+              <img
+                src="/assets/images/fakhrinaufal.jpeg"
+                class="rounded-circle"
+                alt="Profile"
+                width="30"
+                height="30"
+              />
+              <div class="info ms-2">
+                <h6 class="d-flex justify-content-between align-items-center">
+                  <span>
+                    fakhrismufai
+                    <i class="bi bi-suit-club-fill"></i>
+                    <small class="text-muted">6m ago</small>
+                  </span>
+                  <i class="bi bi-three-dots ms-2 px-1"></i>
+                </h6>
+                
+                <p>
+                  I've been having a lot of fun lately making some awesome graphics in midjourney.
+                  <br>
+                  It adds flair to your site, but don't overdo it.
+                  <br>
+                  Would you be interested in some prompts or tutorial?
+                </p>
+                <div class="icon-group d-flex gap-1 w-100 mt-2 mb-2">
+                  <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                    <i class="bi bi-heart-fill"></i>
+                    <span>123</span>
+                  </span>
+                  <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                    <i class="bi bi-chat-text"></i>
+                    <span>123</span>
+                  </span>
+                  <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                    <i class="fa-solid fa-retweet"></i>
+                    <span>123</span>
+                  </span>
+                  <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>123</span>
+                  </span>
+                  <span class="bg-light rounded-circle d-flex align-items-center justify-content-center ms-auto bookmark">
+                    <i class="bi bi-bookmark-fill"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <hr />
+            
+            <!-- Second Comment --><!-- fakhrismufai Comment -->
+            <div class="comment d-flex mb-3">
+              <img
+                src="/assets/images/Taylor Hill.jpeg"
+                class="rounded-circle"
+                alt="Profile"
+                width="30"
+                height="30"
+              />
+              <div class="info ms-2">
+                <h6 class="d-flex justify-content-between align-items-center">
+                  <span>
+                    taylorh77
+                    <i class="bi bi-suit-club-fill"></i>
+                    <small class="text-muted">6m ago</small>
+                  </span>
+                  <i class="bi bi-three-dots ms-2 px-1"></i>
+                </h6>
+                
+                <p>
+                  I've been having a lot of fun lately making some awesome graphics in MidJourney.
+                  <br>
+                  It adds flair to your site, but don't overdo it.
+                  <br>
+                  Would you be interested in some prompts or tutorials?
+                </p>
+                <div class="icon-group d-flex gap-1 w-100 mt-2 mb-2">
+                  <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                    <i class="bi bi-heart-fill"></i>
+                    <span>123</span>
+                  </span>
+                  <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                    <i class="bi bi-chat-text"></i>
+                    <span>123</span>
+                  </span>
+                  <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                    <i class="fa-solid fa-retweet"></i>
+                    <span>123</span>
+                  </span>
+                  <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>123</span>
+                  </span>
+                  <span class="bg-light rounded-circle d-flex align-items-center justify-content-center ms-auto bookmark">
+                    <i class="bi bi-bookmark-fill"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Reply Comment -->
+            <div class="reply-line ms-3 border-start border-3 ps-3">
+              <div class="d-flex mb-3">
+                <img
+                  src="/assets/images/fakhrinaufal.jpeg"
+                  class="rounded-circle"
+                  alt="Profile"
+                  width="30"
+                  height="30"
+                />
+                <div class="info ms-2">
+                  <h6 class="d-flex justify-content-between align-items-center">
+                    <span>
+                      fakhrinaufal
+                      <i class="bi bi-suit-club-fill"></i>
+                      <small class="text-muted">6m ago</small>
+                    </span>
+                    <i class="bi bi-three-dots ms-2 px-1"></i>
+                  </h6>
+                  
+                  <p>
+                    I've been having a lot of fun lately making some awesome graphics in MidJourney.
+                    <br>
+                    It adds flair to your site, but don't overdo it.
+                  </p>
+                  <div class="icon-group d-flex gap-1 w-100 mt-2 mb-2">
+                    <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                      <i class="bi bi-heart-fill"></i>
+                      <span>123</span>
+                    </span>
+                    <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                      <i class="bi bi-chat-text"></i>
+                      <span>123</span>
+                    </span>
+                    <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                      <i class="fa-solid fa-retweet"></i>
+                      <span>123</span>
+                    </span>
+                    <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      <span>123</span>
+                    </span>
+                    <span class="bg-light rounded-circle d-flex align-items-center justify-content-center ms-auto bookmark">
+                      <i class="bi bi-bookmark-fill"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Third Comment -->
+            <div class="comment d-flex">
+              <img
+                src="/assets/images/wahyujr_11.jpeg"
+                class="rounded-circle"
+                alt="Profile"
+                width="50"
+                height="50"
+              />
+              <div class="info ms-2">
+                <h6 class="d-flex justify-content-between align-items-center">
+                  <span>
+                    wayhu_ir_11
+                    <i class="bi bi-suit-club-fill"></i>
+                    <small class="text-muted">6m ago</small>
+                  </span>
+                  <i class="bi bi-three-dots ms-2 px-1"></i>
+                </h6>
+                <p>I've been having a lot of fun lately making some awesome graphics in midjourney
+                  <br>
+                  It adds flair to your site, but don't overdo it.
+                  <br>
+                  Would you be interested in some prompts or tutorial?</p>
+                  <div class="icon-group d-flex gap-1 w-100 mt-2 mb-2">
+                    <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                      <i class="bi bi-heart-fill"></i>
+                      <span>123</span>
+                    </span>
+                    <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                      <i class="bi bi-chat-text"></i>
+                      <span>123</span>
+                    </span>
+                    <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                      <i class="fa-solid fa-retweet"></i>
+                      <span>123</span>
+                    </span>
+                    <span class="bg-light px-1 py-1 rounded-5 d-flex align-items-center gap-1 ms-1">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      <span>123</span>
+                    </span>
+                    <span class="bg-light rounded-circle d-flex align-items-center justify-content-center ms-auto bookmark">
+                      <i class="bi bi-bookmark-fill"></i>
+                    </span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      // Array of video sources
+      const videoSources = [
+        "/assets/videos/We Can All Be Winnie The Pooh .mp4",
+        "/assets/videos/We Can All Be Winnie The Pooh .mp4",
+      ];
+
+      // Track the current video index
+      let currentVideoIndex = 0;
+
+      // Select video element
+      const videoElement = document.querySelector(".video-content");
+
+      // Select control icons
+      const prevButton = document.getElementById("prev-video");
+      const nextButton = document.getElementById("next-video");
+      const playButton = document.getElementById("play-btn");
+      const volumeButton = document.getElementById("volume-btn");
+
+      // Function to load and play a video by index
+      function loadAndPlayVideo(index) {
+        if (index >= 0 && index < videoSources.length) {
+          currentVideoIndex = index;
+          videoElement.src = videoSources[currentVideoIndex]; // Update the video source
+          videoElement.load(); // Ensure the new video is loaded
+          videoElement.play().catch((error) => {
+            console.error("Error playing video:", error);
+          });
+        }
+      }
+
+      // Event listeners for navigation buttons
+
+      // Previous video (up arrow)
+      prevButton.addEventListener("click", function () {
+        if (currentVideoIndex > 0) {
+          loadAndPlayVideo(currentVideoIndex - 1);
+        }
+      });
+
+      // Next video (down arrow)
+      nextButton.addEventListener("click", function () {
+        if (currentVideoIndex < videoSources.length - 1) {
+          loadAndPlayVideo(currentVideoIndex + 1);
+        }
+      });
+
+      // Play/Pause toggle
+      playButton.addEventListener("click", function () {
+        if (videoElement.paused) {
+          videoElement.play().catch((error) => {
+            console.error("Error playing video:", error);
+          });
+          playButton.classList.remove("bi-play-fill");
+          playButton.classList.add("bi-pause-fill");
+        } else {
+          videoElement.pause();
+          playButton.classList.remove("bi-pause-fill");
+          playButton.classList.add("bi-play-fill");
+        }
+      });
+
+      // Mute/Unmute toggle
+      volumeButton.addEventListener("click", function () {
+        videoElement.muted = !videoElement.muted;
+        volumeButton.classList.toggle("bi-volume-off-fill", videoElement.muted);
+        volumeButton.classList.toggle("bi-volume-up-fill", !videoElement.muted);
+      });
+
+      // Load the first video initially
+      loadAndPlayVideo(currentVideoIndex);
+      const mainVideo = document.querySelector(".video-content");
+      const bgVideo = document.querySelector(".background-video");
+
+      // Synchronize background video with the main video
+      mainVideo.addEventListener("play", () => {
+        bgVideo.src = mainVideo.currentSrc;
+        bgVideo.play();
+      });
+
+      mainVideo.addEventListener("pause", () => {
+        bgVideo.pause();
+      });
+
+      mainVideo.addEventListener("timeupdate", () => {
+        bgVideo.currentTime = mainVideo.currentTime; // Keep time in sync
+      });
+    </script>
+  </body>
+</html>

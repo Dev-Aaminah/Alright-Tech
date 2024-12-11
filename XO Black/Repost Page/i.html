@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Grid Layout</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .post-image img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+    <!-- Caption -->
+    <div class="text-center mb-3">
+      <p>
+        Just hit 3,000+ followers on X! Thanks for being here and letting me
+        share my work with you.
+      </p>
+    </div>
+    <!-- Images Grid -->
+    <div id="image-grid" class="row g-3">
+      <img src="/assets/images/Image.png" alt="">
+      <img src="/assets/images/Image.png" alt="">
+      <img src="/assets/images/Image.png" alt="">
+      
+    </div>
+  </div>
+
+  <script>
+    // Images Array (Dynamic Content)
+    const images = [
+      "/assets/images/Image1.png",
+      "/assets/images/Image2.png",
+      "/assets/images/Image3.png",
+      "/assets/images/Image4.png",
+    ];
+
+    // Reference to the Grid Container
+    const grid = document.getElementById("image-grid");
+
+    // Logic to Dynamically Render Images
+    if (images.length === 1) {
+      // One Image: Single column
+      grid.innerHTML = `
+        <div class="col-12 post-image">
+          <img src="${images[0]}" alt="Post Image" class="rounded" />
+        </div>
+      `;
+    } else if (images.length === 2) {
+      // Two Images: Single Row
+      grid.innerHTML = `
+        <div class="col-6 post-image">
+          <img src="${images[0]}" alt="Post Image 1" class="rounded" />
+        </div>
+        <div class="col-6 post-image">
+          <img src="${images[1]}" alt="Post Image 2" class="rounded" />
+        </div>
+      `;
+    } else if (images.length === 3) {
+      // Three Images: One on Left, Two on Right
+      grid.innerHTML = `
+        <div class="col-md-6 post-image">
+          <img src="${images[0]}" alt="Post Image 1" class="rounded" />
+        </div>
+        <div class="col-md-6">
+          <div class="row g-3">
+            <div class="col-12 post-image">
+              <img src="${images[1]}" alt="Post Image 2" class="rounded" />
+            </div>
+            <div class="col-12 post-image">
+              <img src="${images[2]}" alt="Post Image 3" class="rounded" />
+            </div>
+          </div>
+        </div>
+      `;
+    } else if (images.length === 4) {
+      // Four Images: Grid Layout
+      grid.innerHTML = `
+        <div class="col-md-3 post-image">
+          <img src="${images[0]}" alt="Post Image 1" class="rounded" />
+        </div>
+        <div class="col-md-3 post-image">
+          <img src="${images[1]}" alt="Post Image 2" class="rounded" />
+        </div>
+        <div class="col-md-3 post-image">
+          <img src="${images[2]}" alt="Post Image 3" class="rounded" />
+        </div>
+        <div class="col-md-3 post-image">
+          <img src="${images[3]}" alt="Post Image 4" class="rounded" />
+        </div>
+      `;
+    } else {
+      // More than 4 Images: Display a warning or truncate
+      grid.innerHTML = `
+        <div class="col-12 text-center">
+          <p>Too many images to display in this layout!</p>
+        </div>
+      `;
+    }
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
