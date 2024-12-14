@@ -1,0 +1,241 @@
+
+.icon {
+    /* width: 50px;  */
+    /* height: 50px; */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.border-bottom-line{
+    border-bottom: 1px solid rgb(238, 233, 233);
+}
+
+.para-size{
+    font-size: 0.8rem;
+}
+
+.post{
+    width: 150px;
+    height: 150px;
+}
+
+.text-yellow{
+    color: rgba(255, 204, 0, 1);
+}
+
+.logo{
+    height: 35px;
+    width: 35px;
+}
+
+.header-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.quick-menu-btn {
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.prof-img{
+    height: 40px;
+    width: 40px;
+}
+
+.rating-star {
+    color: #28a745;
+}
+
+.order-now-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.restaurant-title {
+    font-size: 0.9rem;
+}
+
+.restaurant-number {
+    background-color: #000;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.contact-info span {
+    display: block;
+}
+
+.qr-code {
+    width: 40px;
+    height: 40px;
+}
+
+.restaurant-image {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.scroll-img{
+    height: 250px;
+}
+
+.post-img{
+    height: 250px; 
+    width: 750px;
+    object-fit: cover;
+}
+
+.star{
+    color: #28a745;
+}
+
+.radio {
+    width: 15px;
+    height: 15px;
+    border: 1px solid green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blinking-radio {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    appearance: none;
+    transition: background-color 0.3s ease;
+    animation: blink 2s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #28a745;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  .blinking-radio:checked {
+    background-color: #28a745;
+}
+
+.address-font{
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.details{
+    width: 20rem;
+}
+
+.order-btn{
+    justify-content: end;
+}
+
+.connect-btn:hover{
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+}
+
+.order-status .d-flex {
+    align-items: center;
+}
+
+.order-status .radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+@media (max-width: 576px) {
+  
+    .radio input {
+      width: 15px;
+      height: 15px;
+    }
+  
+    .details {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .details .border {
+      margin-bottom: 5px;
+    }
+  
+    .address-font {
+      font-size: 14px;
+    }
+
+}
+  
+@media (max-width: 768px) {
+    .details {
+        width: 16rem;
+        padding: 10px;
+        flex-direction: row;
+    }
+
+    .details .border {
+        margin-bottom: 10px;
+    } 
+
+    .order-status{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .order-detail{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .order-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .order-now-btn {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 7px 10px;
+        font-size: 0.8rem;
+    }
+
+    .add-detail{
+        display: flex;
+        flex-direction: row;
+    }
+}
