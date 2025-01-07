@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Admin Posts</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4fc;
+    }
+
+    .header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 15px;
+    }
+
+    .tags span {
+        border: 1px solid black;
+      border-radius: 15px;
+      padding: 1px 10px;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+
+    .table-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .btn-custom {
+      background-color: #5d5fea;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Header -->
+    <div class="header d-flex justify-content-between align-items-center">
+      <h3 class="fw-bold">XO BLACK</h3>
+      <input type="text" class="form-control w-50" placeholder="Search posts">
+      <div class="d-flex align-items-center">
+        <button class="btn btn-custom me-3">+ Add New Post</button>
+        <div class="d-flex align-items-center">
+          <span class="me-2">Taylor Hill</span>
+          <img src="https://via.placeholder.com/40" alt="Profile" class="rounded-circle">
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="my-4 d-flex justify-content-between">
+      <h4>Posts</h4>
+      <div>
+        <button class="btn btn-outline-secondary btn-sm">All (129)</button>
+        <button class="btn btn-outline-secondary btn-sm">Published (109)</button>
+        <button class="btn btn-outline-secondary btn-sm">Drafts (20)</button>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-container">
+      <table class="table table-striped table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th></th>
+            <th>Blog Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Tagged</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Row 1 -->
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>15 Best Soul Food Restaurants Around Atlanta</td>
+            <td>Jerome Bell</td>
+            <td>Eats</td>
+            <td class="tags">
+              <span>Soul Kitchen</span>
+              <span>Frank's Cajun</span>
+              <span>Big Daddy's Kitchen</span>
+              <span>+12</span>
+            </td>
+            <td>2024/02/05 4:37 PM</td>
+            <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+          </tr>
+          <!-- Row 2 -->
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>The Evolution of Influencers: From Celebrities to Everyday Experts</td>
+            <td>Dianne Russell</td>
+            <td>Influencers</td>
+            <td class="tags">
+              <span>Mary Queen</span>
+              <span>Marcus Brownlee</span>
+            </td>
+            <td>2024/02/05 4:37 PM</td>
+            <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+          </tr>
+          <!-- Row 3 -->
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Unforgettable Experiences: Top upcoming events you can't miss</td>
+            <td>Annette Black</td>
+            <td>Events</td>
+            <td class="tags">
+              <span>Zee Concert</span>
+              <span>Party in the park</span>
+              <span>Booze and Breeze</span>
+            </td>
+            <td>2024/02/05 4:37 PM</td>
+            <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+          </tr>
+          <!-- Row 4 -->
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>New Fancy Restaurant Opens in Atlanta</td>
+            <td>Devon Lane</td>
+            <td>Eats</td>
+            <td class="tags">
+              <span>Soul Kitchen</span>
+              <span>Frank's Cajun</span>
+              <span>Cookhouse & Pours</span>
+            </td>
+            <td>2024/02/05 4:37 PM</td>
+            <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+          </tr>
+          <!-- Row 5 -->
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>This Barbershop Is Revolutionizing the Grooming Industry</td>
+            <td>Kathryn Murphy</td>
+            <td>Services</td>
+            <td class="tags">
+              <span>Cut Kings</span>
+            </td>
+            <td>2024/02/05 4:37 PM</td>
+            <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+          </tr>
+          <!-- Row 6 -->
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>The New Era of Beauty: How Salons Are Redefining Self-Care</td>
+            <td>Beatrice Sam</td>
+            <td>Services</td>
+            <td class="tags">
+              <span>Glam Haven</span>
+              <span>Chic Cuts</span>
+              <span>Luxe Lounge</span>
+            </td>
+            <td>2024/02/05 4:37 PM</td>
+            <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+          </tr>
+          <!-- Row 7 -->
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Setting the Stage: How DJ Collectives Are Transforming the Party Scene</td>
+            <td>Jenny Wilson</td>
+            <td>DJ</td>
+            <td class="tags">
+              <span>Beat Masters</span>
+              <span>Sound Wave</span>
+            </td>
+            <td>2024/02/05 4:37 PM</td>
+            <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+          </tr>
+          <!-- Row 8 -->
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Innovative Clinics Leading the Way</td>
+            <td>Theresa Webb</td>
+            <td>Influencers</td>
+            <td class="tags">
+              <span>MediBridge</span>
+              <span>WellCare</span>
+            </td>
+            <td>2024/02/05 4:37 PM</td>
+            <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

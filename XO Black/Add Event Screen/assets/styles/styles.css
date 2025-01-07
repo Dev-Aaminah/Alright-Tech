@@ -1,0 +1,60 @@
+.sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.template-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.template-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-container {
+    position: relative;
+    margin: 30px 0;
+}
+  
+.progress-line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-350%);
+    left: 5%;
+    right: 4%;
+    height: 4px;
+    background-color: #28a745;
+    z-index: 0;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+}
+  
+.step-label {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.border-left{
+    border-left: 1px solid #e7e1e1;
+}
+
+.hero-sec{
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+aside {
+    background-color: #f8f9fa;
+  }
+  @media (max-width: 768px) {
+    aside {
+      display: none;
+    }
+    main {
+      padding: 0 1rem;
+    }
+  }
